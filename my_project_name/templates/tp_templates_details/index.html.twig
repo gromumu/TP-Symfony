@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TPTemplatesDetailsController!{% endblock %}
+
+{% block body %}
+    <style>
+        .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+        .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    </style>
+    <header>
+        <ul>
+            <li>
+                <a href="{{ path('tptemplateshome') }}">Home</a>
+            </li>
+            <li>
+                <a href="{{ path('tptemplates_list') }}">List</a>
+            </li>
+            <li>
+                <a href="{{ path('tptemplates_creation') }}">Creation</a>
+            </li>
+        </ul>
+    </header>
+    <br>
+
+    {{ id }}
+
+{% endblock %}
