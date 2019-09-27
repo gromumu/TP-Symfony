@@ -22,4 +22,9 @@
         </ul>
     </header>
     <br>
+
+    {% for announcement in announcementsList %}
+        {{ announcement.title }}
+        <a href="{{ path('tptemplates_details',{id:announcement.id}) }}"/>Voir Plus</a><br>
+    {% endfor %}
 {% endblock %}
