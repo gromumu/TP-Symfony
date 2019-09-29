@@ -30,6 +30,7 @@ class TPTemplatesCreationController extends AbstractController
             return $this->redirectToRoute('tptemplateshome');
         }
 
+
         return $this->render('tp_templates_creation/index.html.twig', [
             'controller_name' => 'TPTemplatesCreationController',
             'form'=> $form->createView(),
